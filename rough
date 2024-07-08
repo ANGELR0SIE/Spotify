@@ -1,0 +1,264 @@
+@font-face {
+    font-family: font1;
+    src: url("https://encore.scdn.co/fonts/CircularSp-Book-a00e99ef9996a3a157fb6b746856d04f.woff2");
+}
+@font-face {
+    font-family: font2;
+    src: url("https://encore.scdn.co/fonts/CircularSpTitle-Bold-b2586b06a2e1522e9d879d84c2792a58.woff2");
+}
+@font-face {
+    font-family: font3;
+    src: url("https://encore.scdn.co/fonts/CircularSp-Bold-602e7aefc706aa36c6ec1324b9bbc461.woff2");
+}
+@font-face {
+    font-family: font4;
+    src: url("https://encore.scdn.co/fonts/CircularSpTitle-Black-4588c99025b967475c31695b0743dd1a.woff2");
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #121212;
+    display: flex;
+    font-size: 16px;
+    line-height: normal;
+height: 10000px;
+}
+/* .main{
+    isolation: isolate;
+    width: 100%;
+    z-index: 0%;
+}
+.main,.root{
+    height: 100%;
+    position: relative;
+    z-index: 0;
+}
+:root{
+    --panel-gap: 8px;        /*default value that created for  it would be global */
+    /* --top-bar-opacity:0.0; */
+/* }
+div{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+.main-grid{
+  background-color: #000;
+  display: grid;
+  gap: var(--panel-gap);
+} */ 
+.main{
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+}
+.nav{
+    background: #000;
+    display: flex;
+    align-items: center;
+    position:fixed;
+    z-index: 2;
+    height: 19px;
+    padding: 13px 13px;
+    padding-right: 13px;
+    gap:16px;
+    left: 0;
+    top: 0;
+    right: 0; 
+}
+.nav::before{
+    bottom: 0;
+    content: "";
+    position: absolute;
+    z-index: -1;
+}
+.spotifiy-log-nav{
+    display: flex;
+    align-items: center;
+    background: transparent;
+    padding-top: 4px;
+    padding-right:0px;
+    
+}
+.spotifiy-log-nav svg{
+    height: 30px;
+    width: 25.5px;
+}
+.nav-spacer-flex-1{
+    flex: 1;
+}
+.nav-part-2-flex{
+    gap: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-search-icon svg{
+    /* padding: 0 16px; */
+    padding-left: 0;
+    padding-top: 0.5px;
+    display: flex;
+    align-items: center;
+    width: 13px;
+    /* align-items: start; */
+}
+.nav-search-icon path{
+    height: 15.51px;
+    width: 15.35px;
+    padding: 0 16px;
+}
+.nav-open-app{
+    text-align: center;
+    display: flex;
+    border-radius: 9999px;
+    align-items: center;
+    color: #000;
+    border: none;
+     padding: 6px 12.5px;
+     /* height: 31.99px;
+     width: 93.36px; */
+}
+.nav-open-app span{
+    position: relative;
+    font-family: font3;
+    font-size: 10px;
+    letter-spacing: 0.2px;
+   
+}
+.nav-threeline svg{
+    display: flex;
+    /* text-align: start; */
+    /* margin-left: 16px; */
+    width: 19px;
+}
+.nav-threeline path{
+    height: 17.99px;
+    width: 15.99px;
+}
+.margin-top-56{
+    margin-top: 46px;
+}
+.dark-theme{
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 6;
+}
+.card-flexes{
+    
+    padding: 0 16px 16px;
+    padding-left: 13px;
+    box-sizing: border-box;
+    width: 100vw;
+}
+.container {
+    /* border-radius: 10px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+}
+.container-head{
+    display: flex;
+    margin-top: 18px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+.container-head h2 {
+    font-size: 16px;
+    font-family: font2;
+    color: #fff;
+    margin: 0;
+}
+.artist-card {
+    max-inline-size: 122px;
+    display: inline-flex;
+    flex-direction: column;
+    /* height: fit-content; */
+    position: relative;
+    border-radius: 6px;
+    min-block-size: 48px;
+    padding-block: 4px;
+    padding-inline: 7.2px;
+    padding-left: 6px;
+    object-fit: cover;
+}
+
+.artist-card img {
+    object-fit: cover;
+    /* width: 150.99px; */
+    /* min-inline-size: 151.99px; */
+    aspect-ratio: 1/1;
+    inline-size: 100%;
+    border-radius: 4px;
+    margin-bottom: 1px;
+    /* width: 151.99px; */
+}
+#Arjit img{
+    width: 121px;
+    height: 122px;
+    /* height: 100%; */
+    margin-bottom: 1px;
+    object-fit: cover;
+    aspect-ratio: 1/1
+}
+.name a {
+    text-decoration: none;
+   margin-left: 0px;
+    color: #fff;
+}
+.name span{
+    font-size: 12.8px;
+    font-weight: 400;
+    font-family: font1;
+}
+#Anirudh{
+    padding-left: 5px;
+}
+
+.scrollable-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 0px;
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    overflow-x: scroll;
+    height: fit-content;
+    margin-bottom: 0px;
+    height: 197.21px;
+    padding-left: 0px;
+}
+
+/* .card {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+} */
+
+/* .card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.card .name {
+    font-size: 16px;
+    color: #333;
+} */
